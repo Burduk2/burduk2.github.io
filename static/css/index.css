@@ -162,6 +162,7 @@ p {
 
 .sect-form {
     padding: 3.5em 0;
+    position: relative;
 }
 .sect-form form {
     background-color: var(--bg-color);
@@ -210,6 +211,21 @@ p {
     display: block;
     margin: auto;
     margin-top: 2em;
+}
+
+.sect-form .branding {
+    display: flex;
+    align-items: center;
+    font-size: .9em;
+    gap: .2em;
+    position: absolute;
+    bottom: 1em;
+    left: 1.5em;
+    text-decoration: none;
+    opacity: .8;
+}
+.sect-form .branding img {
+    width: 1.3em;
 }
 
 
