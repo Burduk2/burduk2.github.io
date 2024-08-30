@@ -112,9 +112,58 @@ p {
 }
 
 
+.sect-facts .top-img {
+    margin: auto;
+    display: block;
+    margin-top: 3em;
+}
+.sect-facts .sect-title {
+    margin-top: 1.3em;
+    text-align: center;
+}
+.sect-facts .sect-subtitle {
+    text-align: center;
+    width: 820px; 
+    max-width: 100%;
+    margin: auto;
+    margin-top: 1.2em;
+}
+
+.sect-facts .facts-wrapper {
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em 1em;
+    justify-content: space-between;
+
+    margin-bottom: 10em;
+}
+.sect-facts .fact {
+    width: 350px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sect-facts .fact img {
+    width: 100%;
+}
+.sect-facts .fact h4 {
+    text-align: center;
+    margin-top: .2em;
+}
+.sect-facts .fact p {
+    text-align: center;
+    margin-top: 1em;
+}
+
+
 
 @media (max-width: 1140px) {
     .sect-hero .wrapper {
+        justify-content: center;
+    }
+    .sect-facts .facts-wrapper {
         justify-content: center;
     }
 }
