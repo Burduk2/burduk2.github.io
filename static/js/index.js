@@ -7,10 +7,6 @@ class Random {
     static str = (len, ch) => Array.from({ length: len }, _ => this.choice(ch)).join('');
 }
 
-document.querySelectorAll('[data-gus-launch-btn]').forEach(btn => {
-    btn.onclick = launchGus;
-});
-
 function launchGus() {
     const imgElm = document.createElement('img');
     imgElm.classList.add('launched-gus');
@@ -28,4 +24,12 @@ function launchGus() {
     ], { duration: animationDuration, easing: 'ease-in-out', fill: 'both' });
 
     setTimeout(() => { document.body.removeChild(imgElm) }, animationDuration);
+}
+
+
+const form = document.querySelector('#form');
+form.onsubmit = e => {
+    e.preventDefault();
+    launchGus();
+    form.reset();
 }

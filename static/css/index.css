@@ -19,6 +19,10 @@
     font-family: 'Inter', system-ui;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-color);
 }
@@ -48,6 +52,7 @@ p {
     cursor: pointer;
     transition: 50ms;
     border: 2px solid var(--accent-color);
+    display: inline-block;
 }
 .accent-btn:hover {
     /* not sure about this hover effect */
@@ -154,6 +159,58 @@ p {
     margin-top: 1em;
 }
 
+
+.sect-form {
+    padding: 3.5em 0;
+}
+.sect-form form {
+    background-color: var(--bg-color);
+    border-radius: 1.5em;
+    padding: 2em;
+    width: 500px;
+    max-width: 100%;
+    height: fit-content;
+    margin: auto;
+}
+.sect-form .top-img {
+    margin: auto;
+    display: block;
+    width: 1.8em;
+}
+.sect-form form h4 {
+    margin-top: 1.2em;
+    text-align: center;
+}
+.sect-form form p {
+    text-align: center;
+    margin-top: .4em;
+    margin-bottom: 1.5em;
+}
+.sect-form form fieldset {
+    border-radius: .5em;
+    margin: 1em 0;
+    border-color: var(--subaccent-color);
+}
+.sect-form form fieldset:focus-within {
+    border-color: var(--accent-color);
+}
+.sect-form form fieldset legend {
+    margin-left: .2em;
+    margin-bottom: -.4em;
+    opacity: .9;
+}
+.sect-form form input {
+    width: 100%;
+    padding: .8em .5em;
+    background-color: #0000;
+    border: 0;
+    outline: none;
+}
+.sect-form form .submit-btn {
+    display: block;
+    margin: auto;
+    margin-top: 2em;
+}
 
 
 @media (max-width: 1140px) {

@@ -22,7 +22,7 @@
                         подвигами, бороню Батьківщину та підтримую позитивний дух народу. 
                         Слава Україні!
                     </p>
-                    <button class="accent-btn" data-gus-launch-btn>Запустити гуся</button>
+                    <a class="accent-btn" href="#form">Запустити гуся</a>
                 </div>
                 <img src="./static/img/hero.gus.svg" alt="BanderoGus">
             </div>
@@ -67,5 +67,31 @@
             </div>
         </div>
     </section>
+    <section class="sect-form gradient-sect">
+        <div class="body-content">
+            <form action="" id="form">
+                <img src="/static/img/trezub.svg" alt="Trezub" class="top-img">
+                <h4>Поділися, будь ласка, поштою</h4>
+                <p>та запиши гуся до бандерозагону</p>
+
+                <fieldset>
+                    <legend>
+                        <label for="name-inp">імʼя</label>
+                    </legend>
+                    <input type="text" id="name-inp" placeholder="Імʼя..." required>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <label for="email-inp">пошта</label>
+                    </legend>
+                    <input type="email" id="email-inp" placeholder="Пошта..." required>
+                </fieldset>
+
+                <button class="submit-btn accent-btn" type="submit">Запустити гуся</button>
+            </form> 
+        </div>
+    </section>
+
+   
 </body>
 </html>
